@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Personal Information</title>
+  <style>
+    @charset "UTF-8";
+
+    * {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+    }
+
+    body {
+      background-color: lightgrey;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      font-size: 40px;
+      border-radius: 30px;
+      font-weight: bolder;
+    }
+
+    .navbar {
+      background-color: darkslategray;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .navbar a {
+      display: inline-block;
+      padding: 24px 20px;
+      color: white;
+      text-align: center;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 30px;
+    }
+
+    .content-col {
+      float: left;
+      padding: 10px;
+    }
+
+    #col1 {
+      width: 24%;
+      height: fit-content;
+      background-color: lightslategray;
+      border-radius: 30px;
+      margin-top: 14px;
+    }
+
+    #profile {
+      width: 50%;
+      margin-left: 23%;
+      border-radius: 99px;
+      margin-bottom: 20px;
+    }
+
+    #col2 {
+      width: 67%;
+    }
+
+    .content-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      text-align: center;
+      font-weight: lighter;
+    }
+
+    .table,
+    #nico {
+      text-align: left;
+    }
+
+    .isi {
+      font-weight: lighter;
+    }
+
+    #hobi,
+    #skill,
+    #contactme {
+      text-align: center;
+    }
+
+    .bagi {
+      border: black 1px solid;
+    }
+
+    #name {
+      font-size: 32px;
+      font-weight: bolder;
+    }
+
+    #contentedu {
+      width: 100%;
+      text-align: left;
+      color: rgb(26, 26, 136);
+    }
+
+    .thin {
+      color: rgb(218, 11, 11);
+      width: 15%;
+    }
+
+    .link {
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      background-color: white;
+      border-radius: 30px;
+    }
+
+    #tabexp {
+      width: 100%;
+      text-align: left;
+    }
+
+    #interest tr th {
+      width: 10%;
+      text-align: start;
+    }
+
+    #interest tr td {
+      width: 5%;
+      text-align: end;
+    }
+
+    @media screen and (max-width: 850px) {
+
+      #col1,
+      #col2 {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #interest tr th {
+        width: 10%;
+      }
+
+      #interest tr td {
+        width: 8%;
+      }
+
+      .thin {
+        width: 30%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--This is the title-->
+  <div class="header">
+    My Personal Information
+  </div>
+
+  <!--This for navigation bar-->
+  <div class="navbar">
+    <a href="#aboutme">About Me</a>
+    <a href="#edu">Education</a>
+    <a href="#hobi">Hobby</a>
+    <a href="#contactme">Contact Me</a>
+  </div>
+
+  <!--This for divide content to 2 side-->
+  <div class="content-row">
+
+    <!--This is left side-->
+    <div class="content-col" id="col1">
+
+      <!--This is my photo profile-->
+      <img id="profile" src="https://storage.googleapis.com/zsgsaxvaojnk/profile.png">
+
+      <div class="table">
+        <!--Hobby-->
+        <div class="judul" id="hobi">HOBBY</div>
+        <hr class="bagi">
+        <table id="interest">
+          <tr>
+            <td>&#127992;</td>
+            <th>Playing Badminton</th>
+          </tr>
+
+          <tr>
+            <td>&#128187;</td>
+            <th>Coding</th>
+          </tr>
+
+          <tr>
+            <td>&#127946;</td>
+            <th>Swimming</th>
+          </tr>
+        </table>
+        <br>
+
+        <!--Contact Me-->
+        <div class="judul" id="contactme">CONTACT ME</div>
+        <hr class="bagi">
+
+        <a class="link" href="https://instagram.com/nico_kangdra/" target="_blank" title="Instagram : nico_kangdra"><img
+            width="30px"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"><br>Instagram</a>
+        <a class="link" href="https://www.linkedin.com/in/nico-kangdra-10378326a/" target="_blank" title="LinkedIn"><img
+            width="30px"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"><br>LinkedIn</a>
+        <a class="link" href="https://wa.me/6285155331900/" target="_blank" title="Whatsapp : 0851-5533-1900"><img
+            width="30px" src="http://www.rajagrafindo.co.id/wp-content/uploads/2018/02/wa-logo.png"><br>Whatsapp</a>
+        <a class="link" href="mailto:nkangdra@gmail.com" target="_blank" title="Email"><img width="30px"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/600px-Mail_%28iOS%29.svg.png"><br>Email</a>
+
+        <br>
+
+
+      </div>
+    </div>
+
+    <!--This is right side-->
+    <div class="content-col" id="col2">
+
+      <!--This for my information-->
+      <div>
+        <h2 id="name">Nico Kangdra</h2>
+        <table id="nico">
+          <tr>
+            <th>Age &emsp;&emsp;: </th>
+            <th>20</th>
+          </tr>
+
+          <tr>
+            <th>Phone &emsp;: </th>
+            <th>0851-5533-1900</th>
+          </tr>
+
+          <tr>
+            <th>Email &emsp; : </th>
+            <th>nkangdra@gmail.com</th>
+          </tr>
+
+          <tr>
+            <th>Address : </th>
+            <th>Puri Gardena, Kalideres, Jakarta Barat</th>
+          </tr>
+        </table>
+        <br><br>
+        <hr class="bagi">
+      </div>
+
+      <!--About Me-->
+      <div>
+        <h2 id="aboutme">About Me</h2>
+        I'm a student from President University majoring in Technology Information. Currently I'm participating in
+        Bangkit Academy with path Cloud Computing.
+        <br><br>
+        <hr class="bagi">
+      </div>
+
+      <!--Education-->
+      <div>
+        <h2 id="edu">Education</h2>
+        <table id="contentedu">
+          <tr>
+            <th class="thin">2007-2012</th>
+            <th>SD Sutomo 1 Medan</th>
+          </tr>
+
+          <tr>
+            <th class="thin">2013-2015</th>
+            <th>SD Galatia 3</th>
+          </tr>
+
+          <tr>
+            <th class="thin">2015-2018</th>
+            <th>SMP Galatia 3</th>
+          </tr>
+
+          <tr>
+            <th class="thin">2018-2021</th>
+            <th>SMA Negeri 95 Jakarta</th>
+          </tr>
+
+          <tr>
+            <th class="thin">2021-Now</th>
+            <th>President University</th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
